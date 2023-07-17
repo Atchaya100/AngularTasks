@@ -1,0 +1,76 @@
+div{
+    border: 2px double grey;
+    margin-top: 50px;
+    padding:50px;
+    width:60%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 20px;
+    color: rgb(125, 140, 128);
+    font-family: 'Courier New', Courier, monospace;
+}
+p{
+    font-weight: bold;
+    padding: 10px;
+}
+#date{
+    color: brown;
+    font-weight: bolder;
+}
+.button{
+    padding:15px;
+    background-color: rgb(226, 239, 185);
+    border:none;
+    margin: 10px;
+    font-size:17px;
+    border-radius:10px;
+    font-weight: 800;
+    color:rgb(11, 11, 11)
+}
+.button:hover{
+    background-color: rgb(147, 112, 147);
+    color:white
+}
+label{
+    color: black;
+    font-size:25px
+}
+@media (min-width: 300px) and (max-width: 800px) {
+    div{
+        border: 2px double grey;
+        margin-top: 50px;
+        padding:50px;
+        width:90%;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 20px;
+        color: rgb(125, 140, 128);
+        font-family: 'Courier New', Courier, monospace;
+    }
+    p{
+        font-weight: bold;
+        font-size: 18px;
+    }
+    #date{
+        color: brown;
+        font-weight: bolder;
+    }
+    .button{
+        padding:10px;
+        background-color: rgb(226, 239, 185);
+        border:none;
+        margin:7px;
+        font-size:17px;
+        border-radius:10px;
+        font-weight: 800;
+        color:rgb(11, 11, 11)
+    }
+    .button:hover{
+        background-color: rgb(147, 112, 147);
+        color:white
+    }
+    label{
+        color: black;
+        font-size:20px
+    }
+}

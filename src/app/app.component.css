@@ -1,0 +1,54 @@
+#nav{
+    padding-top:30px;
+    height:90px;
+    width:100%;
+    background-color: rgb(211, 237, 242);
+    color:grey;
+    
+    
+    
+}
+h3{
+    margin:0px;
+    float:left;
+    font-size:35px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    padding-left: 10px;
+}
+body{
+    margin:auto;
+    
+}
+p{
+    float:right;
+    font-size:30px;
+    padding-right: 20px;;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+   
+}
+@media (min-width: 300px) and (max-width: 800px) {
+    #nav{
+    padding-top:30px;
+    height:90px;
+    width:100%;
+    background-color: rgb(211, 237, 242);
+    color:grey;
+    
+    }
+    h3{
+        margin:0px;
+        font-size:25px;
+        font-family: 'Courier New', Courier, monospace;
+        font-weight: bold;
+    }
+    p{
+        float:right;
+        font-size:20px;
+        margin-top:3px;
+        font-family: 'Courier New', Courier, monospace;
+        font-weight: bold;
+       
+    }
+}

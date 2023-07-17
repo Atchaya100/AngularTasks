@@ -1,0 +1,112 @@
+
+p{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 29px;
+    color: rgb(78, 77, 77);
+    font-weight: bolder;
+    padding-top: 40px;
+    text-align: center;
+}
+.button{
+    padding:15px;
+    margin:30px;
+    background-color: rgb(158, 118, 160);
+    border:none;
+    font-size:17px;
+    border-radius:10px;
+    color:white
+}
+#sort{
+    padding:5px;
+    background-color: rgb(186, 205, 229);
+    border:none;
+    border-radius: 10px;
+}
+#update{
+    color:rgb(227, 122, 122);
+    float:right;
+    margin-top: -90px;
+    font-size: 20px;
+    padding-right: 40px;
+}
+table{
+    background-color: bisque;
+    min-width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.button1{
+    padding:15px;
+    background-color: rgb(158, 118, 160);
+    color:white;
+    border:none;
+    font-size:17px;
+    border-radius:10px;
+}
+#right{
+    padding-right:60px;
+    float:right;
+}
+a{
+    color:rgb(6, 84, 114);
+    text-decoration: none;
+}
+@media (min-width: 300px) and (max-width: 800px) {
+
+    p{
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 19px;
+        color: rgb(78, 77, 77);
+        font-weight: bolder;
+        padding-top: 40px;
+        text-align: center;
+    }
+    .button{
+        padding:10px;
+        margin:30px;
+        background-color: rgb(158, 118, 160);
+        border:none;
+        font-size:17px;
+        border-radius:10px;
+        color:white
+    }
+    #sort{
+        
+        background-color: rgb(186, 205, 229);
+        border:none;
+        font-size:10px;
+        border-radius:5px;
+    }
+    table{
+        background-color: bisque;
+        min-width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .button1{
+        padding:10px;
+
+        background-color: rgb(158, 118, 160);
+        color:white;
+        border:none;
+        font-size:17px;
+        border-radius:10px;
+    }
+    #update{
+        color:rgb(227, 122, 122);
+        float:right;
+        margin-top: -100px;
+        font-size: 20px;
+        padding-right: 20px;
+    }
+    #right{
+        padding-right:30px;
+        width: 150px;
+        float:right;
+    }
+    a{
+        color:rgb(6, 84, 114);
+        text-decoration: none;
+    }
+}

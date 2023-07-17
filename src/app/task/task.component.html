@@ -1,0 +1,12 @@
+<div>
+<p id="date">{{date}}</p><br>
+<label>Task:</label>
+<p>{{task}}</p>
+<label>Description:</label>
+<p>{{description}}</p>
+<label>Status:</label>
+<p>{{status}}</p>
+<button class="button" routerLink="/add/{{id}}">Edit</button>
+<button class="button"  (click)="delete()">Delete</button>
+<button class="button"  (click)="back()">Back</button>
+</div>

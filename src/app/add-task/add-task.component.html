@@ -1,0 +1,36 @@
+<button class="button" routerLink="/tasks">Back</button>
+<form #addRef="ngForm" (ngSubmit)="add(addRef.value)" id="box" class="form-group" >
+    <label>Date:  </label>&nbsp;&nbsp;
+    <input type="date" id="date" name="date" [(ngModel)]="date" class="form-control" required #dRef="ngModel"/><br><br>
+    <div *ngIf="dRef.invalid && (dRef.dirty ||dRef.touched)" class="alert alert-danger">
+      <div *ngIf="dRef.errors?.['required']">
+        Date is required.
+       </div>
+      </div>
+      <label>Task</label><br><br>
+      <input type="text" id="task" name="task" [(ngModel)]="task" class="form-control" required #tRef="ngModel"/><br><br>
+      <div *ngIf="tRef.invalid && (tRef.dirty ||tRef.touched)" class="alert alert-danger">
+        <div *ngIf="dRef.errors?.['required']">
+          Task is required.
+         </div>
+        </div>
+    <label>Description </label><br><br>
+    <input name="description" [(ngModel)]="description" class="form-control" required #storyRef="ngModel"/><br><br>
+    <div *ngIf="storyRef.invalid && (storyRef.dirty ||storyRef.touched)" class="alert alert-danger">
+      <div *ngIf="storyRef.errors?.['required']">
+        Description is required.
+       </div>
+      </div>
+      <label>Status </label><br><br>
+      <select [(ngModel)]="status"  name="status" class="form-control" >
+        <option *ngFor="let i of stat">
+            {{i}}
+        </option>
+    </select>
+  
+      
+  
+     
+    <button id="button1" [disabled]="addRef.invalid">Save</button>
+ 
+</form><br>

@@ -1,0 +1,15 @@
+<form #formRef="ngForm" (ngSubmit)="update(formRef.value)" class="form-group">
+<p>Hi {{name}}</p>
+<label>Mail:</label>
+<p>{{mail}}</p>
+<label>New password:</label>
+<input type="password" [(ngModel)]="password"  name="password"class="form-control" />
+<label>Confirm:</label>
+<input type="password" [(ngModel)]="confirm"  name="confirm" class="form-control"/>
+<br>
+<button>Save</button>
+</form>
+<div>
+<button routerLink="/tasks">Back</button>
+<button (click)="delete()">Delete Account</button>
+</div>

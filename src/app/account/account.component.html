@@ -1,0 +1,51 @@
+<br>
+<br>
+<br>
+<div id="box">
+    <form #formRef="ngForm"  class="form-group" (ngSubmit)="add(formRef.value)">
+        <label>Name: </label>
+    
+        <input [(ngModel)]="name" id="name" name="name" type="text" required minlength="5" class="form-control" #nameRef="ngModel"/><br>
+        <div *ngIf="nameRef.invalid && (mailRef.dirty ||mailRef.touched)" class="alert alert-danger">
+          <div *ngIf="nameRef.errors?.['required']">
+            Name is required.
+           </div>
+           <div *ngIf="nameRef.errors?.['minlength']">
+            Name must be at least 5 characters long.
+       </div> 
+          </div>
+      <label>Email id:</label>
+    
+      <input [(ngModel)]="mail" id="mail" name="mail" type="email" email required  class="form-control" #mailRef="ngModel"/><br>
+      <div *ngIf="mailRef.invalid && (mailRef.dirty ||mailRef.touched)" class="alert alert-danger">
+        <div *ngIf="mailRef.errors?.['required']">
+          Mail id is required.
+         </div>
+         <div *ngIf="mailRef.errors?.['email']">
+           Email address is not valid.
+        </div>
+        </div>
+       
+      <label>Password</label>
+      <input [(ngModel)]="password" id="password" name="password" type="password" required minlength="8" class="form-control" #passRef="ngModel"/><br>
+      <div *ngIf="passRef.invalid && (passRef.dirty ||passRef.touched)" class="alert alert-danger">
+        <div *ngIf="passRef.errors?.['required']">
+          Password is required.
+         </div>
+         <div *ngIf="passRef.errors?.['minlength']">
+          Password must be at least 8 characters long.
+     </div>
+        </div>
+        <label>Confirm Password: </label>
+    
+        <input [(ngModel)]="confirm" id="confirm" name="confirm" type="password" required  class="form-control" #confirmRef="ngModel"/><br>
+        <div *ngIf="confirmRef.invalid && (confirmRef.dirty ||confirmRef.touched)" class="alert alert-danger">
+          <div *ngIf="confirmRef.errors?.['required']">
+            this field is required.
+           </div>
+          </div>
+          <br>
+      <button  [disabled]="formRef.invalid" class="btn btn-info">Submit</button>
+    </form>
+  </div>
+  

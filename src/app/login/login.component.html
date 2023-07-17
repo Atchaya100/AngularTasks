@@ -1,0 +1,28 @@
+
+<body>
+<div id="box">
+    <form #formRef="ngForm" (ngSubmit)="login(formRef.value)" class="form-group">
+            <label>Email id:</label>
+          
+            <input [(ngModel)]="mail" id="mail" name="mail" type="email" required email class="form-control" #mailRef="ngModel"/>
+            <div *ngIf="mailRef.invalid && (mailRef.dirty ||mailRef.touched)" class="alert alert-danger">
+              <div *ngIf="mailRef.errors?.['required']">
+                Mail id is required.
+               </div>
+               <div *ngIf="mailRef.errors?.['email']">
+                Primary email address is not valid.
+              </div>
+              </div>
+            <label>Password</label>
+            <input [(ngModel)]="password" id="password" name="password" type="password" required class="form-control" #passRef="ngModel"/><br>
+            <div *ngIf="passRef.invalid && (passRef.dirty ||passRef.touched)" class="alert alert-danger">
+              <div *ngIf="passRef.errors?.['required']">
+                Password is required.
+               </div>
+              </div>
+              
+            <button  [disabled]="formRef.invalid" class="btn btn-info">Submit</button>
+          </form>
+         
+        </div>
+    </body>

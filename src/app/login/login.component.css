@@ -1,0 +1,21 @@
+#box{
+    border:solid black 1px;
+    padding:20px;
+   width:30%;
+   align-items: center;
+   border-radius: 4px;
+   margin:auto;
+   position:relative;
+   top:50px;
+}
+
+@media (min-width: 300px) and (max-width: 800px) {
+    #box { 
+        border:solid black 1px;
+        padding:20px;
+       width:70%;
+       align-items: center;
+       border-radius: 4px;
+       margin:auto;
+     }
+      }
